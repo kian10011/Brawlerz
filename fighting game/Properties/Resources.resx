@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="prologue_bg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinterest_bg2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2Idleflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2Idleflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4LP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4LP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_Theme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_Theme.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="char3Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prologue_bg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wallpaper_safari bg1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1LKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1LKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1LP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu-cfe-lp.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy1attackright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy1attackright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4BWflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4BWflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6walkleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy6walkleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy3attackleftult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy3attackleftult.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leaderboardbg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leaderboardbg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3BWflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3BWflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1HK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1HK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4fireballleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4fireballleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy2attackright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy2attackright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3LKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3LKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1bwflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1bwflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy5attackleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minionattackleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4fireballright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4fireballright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6walkright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy6walkright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6fireballleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bossfireballleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1HKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1HKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6fireballright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bossfireballright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2fireballflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2fireballflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3HK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3HK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="healthbar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\gradientHealth.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chunny-ts-stance.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4LK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4LK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="crown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\crown.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1HP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy flame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy flame1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3fireballflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3fireballflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="barrel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\itch_ioBarrel-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2BW.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy2walkright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy2walkright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4HP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy3walkleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy3walkleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3LP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3LP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2LK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2LK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4LKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4LKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy3attackright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy3attackright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BlackBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c175aad400287d40c0c6e1d3b035161a1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4FW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4FW.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4LPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4LPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3HKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3HKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2LKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2LKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4attackleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4attackleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy1idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy1idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="minigame_BG1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minigame_BG1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2LPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2LPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy5walkleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minionwalkleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="d25s3h1-7c669e93-277d-47b8-a3aa-d97aea5abd96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\d25s3h1-7c669e93-277d-47b8-a3aa-d97aea5abd96.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1Idleflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1idleflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4BW.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gameTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coollogo_com-165314877.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball4flipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball4flipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4FWflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4FWflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball1flipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball1flipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="prologue_bg4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinterest_bg4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3fireball.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy1walkright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy1walk.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy_flame" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy flame.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl11.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy1attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy1attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MooIct Fireball.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1LPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1LPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3HP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy5attackright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minionattackright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6knockbackright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy6knockbackright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4Idleflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4Idleflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1HPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1HPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4attackright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4attackright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3LPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3LPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="completed_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pinterst_bg.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2HP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2HP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2LP" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2LP.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3HPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3HPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4HPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4HPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4deathright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4deathright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6idleright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy6idleright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy2walkleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy2walkleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6idleleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy6idleleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1fw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1fw.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4HK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4HK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball2flipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball2flipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu-cvs2-stance1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1fireballflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1fireballflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MenuBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuBG.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2HKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2HKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3FWflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3FWflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4Idle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4Idle.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2FWflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2FWflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3BW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3BW.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4deathleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4deathleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2FW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2FW.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2HPflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2HPflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4walkleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4walkleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1LK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu-cfe-a4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy3attackrightult" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemyattackrightult.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy1walkleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy1walkleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4HKflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4HKflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4fireball.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trainingBG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trainingbg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3FW" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3FW.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy5walkright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\minionwalkright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy6knockbackleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy6knockbackleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1fireball.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2BWflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2BWflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\akuma-ssf-stance.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy2attack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy2attack.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\door.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl5.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy3attackleft" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy3attackleft.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2fireball" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2fireball.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1bw" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1bw.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3Idleflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3Idleflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="backgroundlvl6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\backgroundlvl6.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char3LK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\charLK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1Up" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ryu-cfe-shoryuken.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char2HK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2HK.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball3flipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball3flipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy4walkright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy4walkright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char4fireballflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4fireballflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fireball3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\fireball3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="char1fwflipped" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1fwflipped.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="enemy3walkright" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\enemy3walkright.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="deviantart_tree-removebg-preview" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\deviantart_tree-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chibiChar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chibiChar2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char2-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chibiChar3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chibiChar4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\char4.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="btn__click" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\click-5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chill" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chill.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="light_punch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\light punch.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="s2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\s2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="s4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\s4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="victory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Sounds\victory.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

@@ -1,0 +1,844 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9910299B-A686-4D39-9710-65CDB3FD4135}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>fighting_game</RootNamespace>
+    <AssemblyName>ton</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Win32.Registry, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Registry.4.7.0\lib\net461\Microsoft.Win32.Registry.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.2.2.1\lib\net472\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Asio, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Asio.2.2.1\lib\netstandard2.0\NAudio.Asio.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Core.2.2.1\lib\netstandard2.0\NAudio.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Midi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Midi.2.2.1\lib\netstandard2.0\NAudio.Midi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.Wasapi, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.Wasapi.2.2.1\lib\netstandard2.0\NAudio.Wasapi.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinForms, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.WinForms.2.2.1\lib\net472\NAudio.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="NAudio.WinMM, Version=2.2.1.0, Culture=neutral, PublicKeyToken=e279aa5131008a41, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.WinMM.2.2.1\lib\netstandard2.0\NAudio.WinMM.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security.AccessControl, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.4.7.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=4.1.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.4.7.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="brawlerzRun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brawlerzRun.Designer.cs">
+      <DependentUpon>brawlerzRun.cs</DependentUpon>
+    </Compile>
+    <Compile Include="brawlerzRunTut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="brawlerzRunTut.Designer.cs">
+      <DependentUpon>brawlerzRunTut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="charInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="charInfo.Designer.cs">
+      <DependentUpon>charInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CrownOfGlory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrownOfGlory.Designer.cs">
+      <DependentUpon>CrownOfGlory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameSettings.cs" />
+    <Compile Include="prologue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prologue.Designer.cs">
+      <DependentUpon>prologue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prologue2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prologue2.Designer.cs">
+      <DependentUpon>prologue2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gameScreen.Designer.cs">
+      <DependentUpon>gameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeaderBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeaderBoard.Designer.cs">
+      <DependentUpon>LeaderBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Options.Designer.cs">
+      <DependentUpon>Options.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Player.cs" />
+    <Compile Include="PregameScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregameScreen.Designer.cs">
+      <DependentUpon>PregameScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="REGISTER.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="REGISTER.Designer.cs">
+      <DependentUpon>REGISTER.cs</DependentUpon>
+    </Compile>
+    <Compile Include="splashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splashScreen.Designer.cs">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="brawlerzRun.resx">
+      <DependentUpon>brawlerzRun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="brawlerzRunTut.resx">
+      <DependentUpon>brawlerzRunTut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="charInfo.resx">
+      <DependentUpon>charInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrownOfGlory.resx">
+      <DependentUpon>CrownOfGlory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prologue.resx">
+      <DependentUpon>prologue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prologue2.resx">
+      <DependentUpon>prologue2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gameScreen.resx">
+      <DependentUpon>gameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeaderBoard.resx">
+      <DependentUpon>LeaderBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Options.resx">
+      <DependentUpon>Options.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregameScreen.resx">
+      <DependentUpon>PregameScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="REGISTER.resx">
+      <DependentUpon>REGISTER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashScreen.resx">
+      <DependentUpon>splashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Char.Designer.1" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coollogo_com-165314877.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\YsRzL3G.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ken_idle_final_g.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ken_idle_final_g1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ryu-cvs2-stance1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cammy-ssf2-stance1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chunny-ts-stance.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\akuma-ssf-stance.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c175aad400287d40c0c6e1d3b035161a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d25s3h1-7c669e93-277d-47b8-a3aa-d97aea5abd96.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1fw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1bw.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ryu-cvs-strong.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ryu-cfe-shoryuken.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ryu-cfe-a3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1HK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1HP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gradientHealth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ryu-cfe-lp.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ryu-cfe-a4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3HK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3HP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3LP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4BW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4FW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4HK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4HP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4LK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4LP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3BW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3FW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1attack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1walkleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\door.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1walk.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaderboardbg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leaderboardbg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MenuBG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trainingbg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\charLK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy flame.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy flame1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy1attackright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2attackright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2walkright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2attack.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy2walkleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3attackleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3attackleftult.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3attackright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3walkleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy3walkright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemyattackrightult.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1bwflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1fwflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3BWflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3FWflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4BWflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4FWflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3Idleflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1idleflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4Idleflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1HKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1HPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1LKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1LPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3HKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3HPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3LKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3LPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4HKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4HPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4LKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4LPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4walkleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4walkright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifer fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MooIct Fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1fireballflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cammy-ssf2-stance11.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cammy-ssf2-stance12.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HK1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HKflipped1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HP1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2BW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2fireballflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2HPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2Idleflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2LK.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2LKflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2LP.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2LPflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2BWflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2FW.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2FWflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4fireballflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Theme.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3fireball.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3fireballflipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4fireballleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4fireballright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball1flipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball2flipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball3flipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fireball4flipped.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4attackleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4attackright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4deathleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy4deathright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpaper_safari bg1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterest_bg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minionattackleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minionwalkleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minionwalkright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl5.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minionattackright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy5fireballleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy5idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundlvl6.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bossfireballleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bossfireballright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy6idleleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy6idleright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy6knockbackleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy6knockbackright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy6walkleft.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enemy6walkright.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterst_bg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pinterest_bg4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minigame_BG.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minigame_BG1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barrel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barrel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\itch_ioBarrel-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\deviantart_tree-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char3.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char4.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\char2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boss_Level.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scores.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\aot.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\boss.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\chill.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\click-5.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\light punch.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\lvl1.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\lvl2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\lvl3.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\lvl4.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\lvl5.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\lvl6.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\light punch.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Sounds\s3.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="userData.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\click-5.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\click-5.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\s1.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\chill.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\victory.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Sounds\s4.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sounds\s4.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Sounds\victory.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sounds\s2.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\aot.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\boss.mp3">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
